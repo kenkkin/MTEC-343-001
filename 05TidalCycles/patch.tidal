@@ -1,0 +1,8 @@
+-- MELODY
+d1 $ slow 2 $ n (scale "minor" (run 8 + 11)) # s "superpiano" # legato 1.5 # gain 0.5 # room 0.8 # sz 0.9 # delay 0.3 # delaytime 0.25 # delayfeedback 0.4
+
+-- HARMONY
+d2 $ slow 4 $ n "bf4'min9 gf4'maj7 ef4'min11 bf4'min9" # s "superpiano" # sustain 4 # legato 2 # gain 0.5 # room 0.8 # sz 0.9 # lpf 1000
+
+-- PERCUSSION
+d3 $ s "drumtraks:snare" # gain 0.3 # room 0.5 # sz 0.6
