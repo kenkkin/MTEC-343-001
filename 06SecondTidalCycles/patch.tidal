@@ -1,0 +1,15 @@
+-- MELODY
+d1 $ slow 24 $ n "[b3@2 d4] [a3@2 [g3 a3]] [b3@2 d4] [a3] [b3@2 d4] [a4@2 g4] [d4@2 [c4 b3]] [a3] [b3@2 d4] [a3@2 [g3 a3]] [b3@2 d4] [a3] [b3@2 d4] [a4@2 g4] d5@2 [d5@2 [c5 b4]] [[c5 b4] g4@2] [c5@2 [b4 a4]] [[b4 a4] e4@2] [d5@2 [c5 b4]] [[c5 b4] g4 c5] [g5] [~ ~ b3]"
+# s "supervibe"
+# room 0.8 # sz 0.9
+# gain 0.4
+# detune 4
+# velocity 5
+# lpf 1600
+
+-- BASS
+d2 $ slow 24 $ n "[[c2 g2] e3@2] [[c2 g2] fs3@2] [[c2 g2] e3@2] [[c2 g2] fs3@2][[b1 d3] g3@2] [[b1 d3] g3@2] [[a1 c3] g3@2] [[d2 c3] fs3@2][[c2 g2] e3@2] [[c2 g2] fs3@2] [[c2 g2] e3@2] [[c2 g2] fs3@2][[b1 d3] g3@2] [[b1 d3] g3@2] [[a1 c3] g3@2] [[d2 c3] fs3@2][[f2 c3] e3@2] [[e2 b2] d3@2] [[d2 a2] c3@2] [[c2 g2] b2@2][[f2 c3] e3@2] [[e2 b2] d3@2] [[ef2 bf2] df3@2] [[d2 a2] c3 [f3,g2]]"
+# s "supervibe"
+# room 1 # sz 0.9
+# delay 0.3
+# gain 0.6
