@@ -1,0 +1,51 @@
+setcps(0.6)
+
+-- [MELODY]
+d1 $ note "e4 fs4 b4 cs5 d5 fs4 e4 cs5 b4 fs4 d5 cs5"
+# room 1 # legato 1 # lpf 1200 -- # lpf "<2400 2300 2200 2100 2000 1900 1800 1700 1600>"
+# s "superpiano" # velocity 0.7 # pan 0 # gain 0.8
+
+
+-- FEZ SHIFT:
+xfade 1 $ note "e4 fs4 b4 cs5 d5 fs4 e4 cs5 b4 fs4 d5 cs5"
+# s "superchip" # velocity 0.5 # gain 0.7
+# room 1 # legato 1 # lpf 1200
+
+-- FADE OUT:
+xfade 1 $ note "e3"
+# silence
+
+
+-- [PHASE]
+d2 $ slow 1.01 $ note "e4 fs4 b4 cs5 d5 fs4 e4 cs5 b4 fs4 d5 cs5"
+# room 1 # legato 1 # lpf 1200 -- # lpf "<1600 1700 1800 1900 2000 2100 2200 2300 2400>"
+# s "superpiano" # velocity 0.7 # pan 1 # gain "<0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.8@10>"
+
+-- FEZ SHIFT:
+xfade 2 $ slow 1.01 $ note "e4 fs4 b4 cs5 d5 fs4 e4 cs5 b4 fs4 d5 cs5"
+# s "superchip" # velocity 0.5 # gain 0.7
+# room 1 # legato 1 # lpf 1200
+# silence -- MUTE WHEN READY
+
+-- FADE OUT:
+xfade 2 $ note "e3"
+# silence
+
+
+-- [BELLS]
+d3 $ slow 2 $ note "<e3 <[b3|~|e4|d4]>>" -- slow (rand + 1.5)
+# s "supervibe" # velocity 1
+# room 1 # sz 0.9
+# lpf 1600 # gain 0.6 -- REPLACE WITH NEXT LINE
+-- # lpf 1600 # gain 0.7 # pan rand
+-- FEZ SHIFT
+-- # distort 0.1
+-- # silence
+
+
+-- [BASS DRONE]
+d4 $ slow 4 $ note "e2"
+# s "superpwm"
+# room 0.5 # sustain 8 # gain 0.8
+# velocity 0.3 # lpf 200
+-- # silence
